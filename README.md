@@ -1,1 +1,1 @@
-Implementing EvoJax for PINNs
+# Implementing EvoJax for PINNs
