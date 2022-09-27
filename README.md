@@ -11,4 +11,10 @@ Some example implementations of the policy are :MLP, ConvNet, Seq2Seq and [Permu
 
 3. **Tasks** All tasks should implement `evojax.task.base.VectorizedTask` and be in `evojax/task/`. The task refers to everything outside of the neural network (eg. inputs, outputs, loss formulation, etc)
 
+In this implementaiton, we benchmarked the performance of different solvers (eg. CMA-ES JAX based, CMA-ES Wrapper, PGPE, ARS, Open ES, Simple GA) in the context of PINNs.
+
+Attached is the implementation, enjoy!!
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/nicholassung97/EvoJaxforPINNs/blob/main/Adapting_to_PINNs_final.ipynb)
+
+The main struggle with the implementation is that everything is in a blackbox/wrapper. Hence, lots of unwrapping was done in the developement of the code. Moving forward, we will explore the implementation of PINNs on different EA libraries to compare their efficiecy. Also, the possibility of developing the t-NES solver will be explored.
 
